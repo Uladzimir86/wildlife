@@ -146,10 +146,10 @@ body {
 }
 
 
-/*main styles*/
+/*main styles section survival */
 
 .survival {
-  height: 100vh;
+  height: 780px;
   background: url(../img/fox.png) no-repeat center;
   background-size: cover;
   background-color: #02160b;
@@ -186,5 +186,86 @@ body {
   color: #f7f7f7;
   text-decoration: none;
   border: none;
-
 } 
+
+/*section latest_articles*/
+
+.latest_articles {
+    background-color: #CCCCCC;
+    padding-top: 120px;
+}
+
+.latest_articles h2 {
+    font-size: 48px; 
+    line-height: 72px;
+    color: #333333;
+    text-align: center;
+}
+.latest_articles .wrapper > p {
+    font-size: 24px; 
+    line-height: 36px;
+    color: #666666;
+    text-align: center;
+}
+
+/* slyder */
+
+.slyder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+.slyder_articles_box {
+    position:relative;
+    max-width: 300px;
+    max-height: 360px;
+    margin-right: 60px;
+}
+.slyder_articles_box:last-child {
+    margin-right: 0;
+}
+.slyder_articles_box:last-child, .slyder_articles_box:first-child {
+    width: 29px;
+    height: 39px;
+}
+.slyder_articles{
+    text-decoration: none;
+    border: none;
+}
+.slyder_articles_box h4 {
+    position: absolute;
+    bottom: 77px;
+    left: 0;
+    right: 0;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+}
+.slyder_articles_box p {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    font-size: 17px;
+    line-height: 27px;
+    text-align: center;
+}
+
+/*section get_notified*/
+
+.get_notified {
+    background-color: #CCCCCC;
+    padding-top: 240px;
+}
+
+.get_notified h3 {
+    font-size: 27px;
+    line-height: 40px;
+    color: #333333;
+    text-align: center;
+    
+    
+    
+   
+}
