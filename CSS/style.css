@@ -47,12 +47,12 @@
 
 html {
   box-sizing: border-box;
+  background: #E5E5E5;
 }
 *,
 *::after,
 *::before {
   box-sizing: inherit;
-  border: 1px solid steelblue;
 }
 
 body {
@@ -127,6 +127,7 @@ body {
   border: 2px solid #cd6326;
   border-radius: 5px;
   width: 120px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -368,23 +369,3 @@ input[type="submit"]:active {
 .footer_link_net:active{
      opacity: 75%;
 }
-/*
-.header_list {
-  display: flex;
-  flex-wrap: wrap;
-}
-.header_item {
-  margin-left: 61px;
-  height: 60px;
-}
-
-
-}
-
-
-.header_link:not(.header_item:last-child .header_link):hover,
-.header_link:not(.header_item:last-child .header_link):active {
-  opacity: 75%;
-}
-
-*/
