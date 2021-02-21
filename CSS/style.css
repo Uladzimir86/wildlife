@@ -224,13 +224,11 @@ body {
     margin-right: 0;
 }
 .slyder_articles_box:last-child, .slyder_articles_box:first-child {
-    width: 29px;
-    height: 39px;
+    width: 30px;
+    height: 70px;
 }
-.slyder_articles{
-    text-decoration: none;
-    border: none;
-}
+
+
 .slyder_articles_box h4 {
     position: absolute;
     bottom: 77px;
