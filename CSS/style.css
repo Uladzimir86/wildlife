@@ -65,7 +65,7 @@ html {
 }
 
 body {
-  max-width: 1440px;
+  max-width: 1440px;         /*Ширина макета 1440px*/
   margin: 0 auto;
   font-family: "Open Sans";
   font-style: normal;
@@ -75,7 +75,7 @@ body {
   color: #f7f7f7;
 }
 
-/*header styles*/
+    /*header styles*/
 
 .header {
   position: absolute;
@@ -84,7 +84,7 @@ body {
   width: 100%;
 }
 .wrapper {
-  max-width: 1200px;
+  max-width: 1200px;        /*ширина контентной части 1200рх*/
   margin: 0 auto;
 }
 .header_wrapper {
@@ -94,14 +94,17 @@ body {
   justify-content: space-between;
   height: 100px;
 }
+
+/*5.2 Логотип блока Footer полностью повторяет логотип блока Header*/
 .header_logo,
 .footer_logo {
   display: flex;
   align-items: center;
 }
 
+/*5.2*/
 .header_link,
-.header_logo_link:last-child,
+.header_logo_link:last-child,    
 .footer_logo_link:last-child {
   font-size: 23px;
   line-height: 60px;
@@ -139,6 +142,7 @@ body {
    line-height: 0; 
 }
 
+/*1.5 Все элементы панели навигации должны быть интерактивными*/
 .header_link:not(.header_item:last-child .header_link):hover,
 .header_link:not(.header_item:last-child .header_link):active {
   opacity: 75%;
@@ -148,7 +152,7 @@ body {
   opacity: 75%;
 }
 
-/*Button "Sign in"*/
+    /*Button "Sign in"*/
 
 .header_item:last-child {
   border: 2px solid #cd6326;
@@ -161,7 +165,11 @@ body {
   padding: 0 23px; 
   font-family: Roboto;
 }
+.header_item:last-child .header_link {
+    line-height: 27px;
+}
 
+/*1.5 Все элементы панели навигации должны быть интерактивными*/
 .header_item:last-child:hover {
     background: #CD6326;
 }
@@ -170,22 +178,30 @@ body {
 }
 
 
-/*main styles*/
-/*section survival*/
+    /*main styles*/
+    /*section survival*/
 
 .survival {
   height: 780px;
-  background: url(../img/fox.png) no-repeat center;
+
+  /*2.4 У блоков Header и Survival общее фоновое изображение*/
+  background: url(../img/fox.png) no-repeat center #02160b;
   background-size: cover;
   padding-top: 200px;
 }
 .survival h1 {
   font-size: 48px;
-  line-height: 72px;  
-  letter-spacing: 2px;
+  line-height: 72px;
+
+/*2.1 Расстояние между буквами заголовка
+   регулируется css-свойством letter-spacing*/
+  letter-spacing: 2px; 
   color: #CD6326;
 }
 .survival p {
+
+/*2.2 Разрывы строк в текстовом блоке регулируются
+    шириной блока без использования тега <br>*/
     height: 108px;
     width: 274px;
     margin-top: 51px;
@@ -199,23 +215,24 @@ body {
    font-size: 23px;
    text-align: center;
    line-height: 60px;padding: 0 42px;
-    font-family: Roboto;
-}
-.button .button_link {
-    
-}
-
-.button:hover {
-    background: #E39128;
-}
-.button:active {
-    background: #8F5613;
+   font-family: Roboto;
 }
 .button a {
   color: #f7f7f7;
   text-decoration: none;
   border: none;
 } 
+
+/*2.3 Кнопка Donate интерактивная. 
+Используются указанные в макете стили 
+для различных состояний кнопки*/
+.button:hover {
+    background: #E39128;
+}
+.button:active {
+    background: #8F5613;
+}
+
 
 /*section latest_articles*/
 
@@ -240,6 +257,8 @@ body {
 
 /* slyder */
 
+/*3.1 Для вёрстки трёх изображений в ряд
+ лучше использовать flexbox*/
 .slyder {
     display: flex;
     justify-content: center;
@@ -260,7 +279,8 @@ body {
     height: 70px;
 }
 
-
+/*3.2 Надписи поверх изображений можно разместить
+ при помощи абсолютного позиционирования*/
 .slyder_articles_box h4 {
     position: absolute;
     bottom: 77px;
@@ -279,6 +299,8 @@ body {
     line-height: 27px;
     text-align: center;
 }
+
+/*3.3 Стрелки слайдера интерактивны*/
 .slyder_articles_box:last-child :hover {
     opacity: 75%;
 } 
@@ -342,7 +364,7 @@ input[type="submit"]:active {
 /*footer*/
 
 .footer {
-    background: url(../img/fon2.jpg) no-repeat center; 
+    background: url(../img/fon2.jpg) no-repeat center #181617; 
     background-size: cover;
 }
 .footer_wrapper {
@@ -380,10 +402,13 @@ input[type="submit"]:active {
     width: 40px;
     height: 40px;
 }
+
 .footer_link_net{
     text-decoration: none;
     border: none;
 }
+
+/*5.5 Все ссылки в футере должны быть интерактивными*/
 .footer_logo_link:hover,
 .footer_logo_link:active,
 .footer_link:hover,
