@@ -278,7 +278,7 @@ body {
 }
 input[type="email"]{
     width: 540px;
-    height: 60px;
+    height: 62px;
     font-size: 23px;
     line-height: 27px;
     color: #666666;
@@ -289,7 +289,7 @@ input[type="email"]{
 }
 input[type="submit"]{
     width: 120px;
-    height: 60px;
+    height: 62px;
     font-size: 23px;
     line-height: 27px;
     color: #F7F7F7;
