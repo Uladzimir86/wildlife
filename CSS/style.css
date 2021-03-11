@@ -185,7 +185,7 @@ body {
   height: 780px;
 
   /*2.4 У блоков Header и Survival общее фоновое изображение*/
-  background: url(../img/fox.png) no-repeat center #02160b;
+  background: url(../assets/fox.png) no-repeat center #02160b;
   background-size: cover;
   padding-top: 200px;
 }
@@ -364,7 +364,7 @@ input[type="submit"]:active {
 /*footer*/
 
 .footer {
-    background: url(../img/fon2.jpg) no-repeat center #181617; 
+    background: url(../assets/fon2.jpg) no-repeat center #181617; 
     background-size: cover;
 }
 .footer_wrapper {
