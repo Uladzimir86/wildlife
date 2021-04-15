@@ -46,17 +46,17 @@
 }
 /* roboto-regular - latin */
 @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-         url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/roboto-v20-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v20-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 html {
   box-sizing: border-box;
-  background: #E5E5E5;
+  background: #e5e5e5;
 }
 *,
 *::after,
@@ -65,7 +65,7 @@ html {
 }
 
 body {
-  max-width: 1440px;         /*Ширина макета 1440px*/
+  max-width: 1440px; /*Ширина макета 1440px*/
   margin: 0 auto;
   font-family: "Open Sans";
   font-style: normal;
@@ -75,7 +75,7 @@ body {
   color: #f7f7f7;
 }
 
-    /*header styles*/
+/*header styles*/
 
 .header {
   position: absolute;
@@ -84,7 +84,7 @@ body {
   width: 100%;
 }
 .wrapper {
-  max-width: 1200px;        /*ширина контентной части 1200рх*/
+  max-width: 1200px; /*ширина контентной части 1200рх*/
   margin: 0 auto;
 }
 .header_wrapper {
@@ -104,7 +104,7 @@ body {
 
 /*5.2*/
 .header_link,
-.header_logo_link:last-child,    
+.header_logo_link:last-child,
 .footer_logo_link:last-child {
   font-size: 23px;
   line-height: 60px;
@@ -114,9 +114,9 @@ body {
 }
 .header_logo_link:first-child,
 .footer_logo_link:first-child {
-    width: 70px; 
-    height: 60px; 
-    border: none;
+  width: 70px;
+  height: 60px;
+  border: none;
 }
 .header_logo_link:last-child,
 .footer_logo_link:last-child {
@@ -127,19 +127,18 @@ body {
 }
 
 .header_list {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    width: 480px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 480px;
+}
 .header_item:nth-child(3) {
   height: 32px;
   width: 32px;
-  
 }
 .header_item:nth-child(3) .header_link {
-   line-height: 0; 
+  line-height: 0;
 }
 
 /*1.5 Все элементы панели навигации должны быть интерактивными*/
@@ -152,7 +151,7 @@ body {
   opacity: 75%;
 }
 
-    /*Button "Sign in"*/
+/*Button "Sign in"*/
 
 .header_item:last-child {
   border: 2px solid #cd6326;
@@ -162,30 +161,30 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 23px; 
+  padding: 0 23px;
   font-family: Roboto;
 }
 .header_item:last-child .header_link {
-    line-height: 27px;
+  line-height: 27px;
 }
 
 /*1.5 Все элементы панели навигации должны быть интерактивными*/
 .header_item:last-child:hover {
-    background: #CD6326;
+  background: #cd6326;
+  cursor: pointer;
 }
 .header_item:last-child:active {
-    background: #8F5613;
+  background: #8f5613;
 }
 
-
-    /*main styles*/
-    /*section survival*/
+/*main styles*/
+/*section survival*/
 
 .survival {
   height: 780px;
 
   /*2.4 У блоков Header и Survival общее фоновое изображение*/
-  background: url(../img/fox.png) no-repeat center #02160b;
+  background: url(../assets/fox.png) no-repeat center #02160b;
   background-size: cover;
   padding-top: 200px;
 }
@@ -193,66 +192,66 @@ body {
   font-size: 48px;
   line-height: 72px;
 
-/*2.1 Расстояние между буквами заголовка
+  /*2.1 Расстояние между буквами заголовка
    регулируется css-свойством letter-spacing*/
-  letter-spacing: 2px; 
-  color: #CD6326;
+  letter-spacing: 2px;
+  color: #cd6326;
 }
 .survival p {
-
-/*2.2 Разрывы строк в текстовом блоке регулируются
+  /*2.2 Разрывы строк в текстовом блоке регулируются
     шириной блока без использования тега <br>*/
-    height: 108px;
-    width: 274px;
-    margin-top: 51px;
-    margin-bottom: 49px;
+  height: 108px;
+  width: 274px;
+  margin-top: 51px;
+  margin-bottom: 49px;
 }
 .button {
-   height: 60px;
-   width: 160px;
-   background: #CD6326;
-   border-radius: 5px;
-   font-size: 23px;
-   text-align: center;
-   line-height: 60px;padding: 0 42px;
-   font-family: Roboto;
+  height: 60px;
+  width: 160px;
+  background: #cd6326;
+  border-radius: 5px;
+  font-size: 23px;
+  text-align: center;
+  line-height: 60px;
+  padding: 0 42px;
+  font-family: Roboto;
 }
 .button a {
   color: #f7f7f7;
   text-decoration: none;
   border: none;
-} 
+}
 
 /*2.3 Кнопка Donate интерактивная. 
 Используются указанные в макете стили 
 для различных состояний кнопки*/
 .button:hover {
-    background: #E39128;
+  background: #e39128;
+  cursor: pointer;
 }
 .button:active {
-    background: #8F5613;
+  background: #8f5613;
 }
-
 
 /*section latest_articles*/
 
 .latest_articles {
-    background-color: #CCCCCC;
-    padding-top: 120px;
+  background-color: #cccccc;
+  padding-top: 120px;
 }
 
 .latest_articles h2 {
-    font-size: 48px; 
-    line-height: 72px;
-    color: #333333;
-    text-align: center;
+  font-size: 48px;
+  line-height: 72px;
+  color: #333333;
+  text-align: center;
 }
 .latest_articles .wrapper > p {
-    font-size: 24px; 
-    line-height: 36px;
-    color: #666666;
-    text-align: center;
-    margin-top: 20px;
+  font-size: 24px;
+  line-height: 36px;
+  color: #666666;
+  text-align: center;
+  margin-top: 20px;
 }
 
 /* slyder */
@@ -260,152 +259,172 @@ body {
 /*3.1 Для вёрстки трёх изображений в ряд
  лучше использовать flexbox*/
 .slyder {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
 }
 .slyder_articles_box {
-    position:relative;
-    max-width: 300px;
-    max-height: 360px;
-    margin-right: 60px;
+  position: relative;
+  max-width: 300px;
+  max-height: 360px;
+  margin-right: 60px;
 }
 .slyder_articles_box:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
-.slyder_articles_box:last-child, .slyder_articles_box:first-child {
-    width: 30px;
-    height: 70px;
+.slyder_articles_box:last-child,
+.slyder_articles_box:first-child {
+  width: 30px;
+  height: 70px;
 }
 
 /*3.2 Надписи поверх изображений можно разместить
  при помощи абсолютного позиционирования*/
 .slyder_articles_box h4 {
-    position: absolute;
-    bottom: 77px;
-    left: 0;
-    right: 0;
-    font-size: 22px;
-    line-height: 36px;
-    text-align: center;
+  position: absolute;
+  bottom: 77px;
+  left: 0;
+  right: 0;
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
 }
 .slyder_articles_box p {
-    position: absolute;
-    bottom: 40px;
-    left: 0;
-    right: 0;
-    font-size: 17px;
-    line-height: 27px;
-    text-align: center;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  font-size: 17px;
+  line-height: 27px;
+  text-align: center;
 }
 
 /*3.3 Стрелки слайдера интерактивны*/
 .slyder_articles_box:last-child :hover {
-    opacity: 75%;
-} 
+  opacity: 75%;
+  cursor: pointer;
+}
 .slyder_articles_box:first-child :hover {
-    opacity: 75%;
+  opacity: 75%;
+  cursor: pointer;
 }
 
 /*section get_notified*/
 
 .get_notified {
-    background-color: #CCCCCC;
-    padding-top: 240px;
-    height: 640px;
+  background-color: #cccccc;
+  padding-top: 240px;
+  height: 640px;
 }
 
 .get_notified h3 {
-    font-size: 27px;
-    line-height: 40px;
-    color: #333333;
-    text-align: center;
+  font-size: 27px;
+  line-height: 40px;
+  color: #333333;
+  text-align: center;
 }
 
 .get_notified form {
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-    text-align: center;
-
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  text-align: center;
 }
-input[type="email"]{
-    width: 540px;
-    height: 62px;
-    font-size: 23px;
-    line-height: 27px;
-    color: #666666;
-    border: 1px solid #666666;
-    padding-left: 15px;
-    background-color:inherit;
-    margin-right: 0;
+input[type="text"] {
+  width: 540px;
+  height: 62px;
+  font-size: 23px;
+  line-height: 27px;
+  color: #666666;
+  border: 1px solid #666666;
+  padding-left: 15px;
+  background-color: inherit;
+  margin-right: 0;
 }
-input[type="submit"]{
-    width: 120px;
-    height: 62px;
-    font-size: 23px;
-    line-height: 27px;
-    color: #F7F7F7;
-    background-color: #CD6326;
-    border: 1px solid #CD6326;
-    border-radius: 0px 5px 5px 0px;
-    margin-left: 0;
+input[type="submit"] {
+  width: 120px;
+  height: 62px;
+  font-size: 23px;
+  line-height: 27px;
+  color: #f7f7f7;
+  background-color: #cd6326;
+  border: 1px solid #cd6326;
+  border-radius: 0px 5px 5px 0px;
+  margin-left: 0;
 }
 input[type="submit"]:hover {
-    background: #E39128;
-    border: 1px solid #E39128;
+  background: #e39128;
+  border: 1px solid #e39128;
 }
 input[type="submit"]:active {
-    background: #8F5613;
-    border: #8F5613;
+  background: #8f5613;
+  border: #8f5613;
 }
 
 /*footer*/
 
 .footer {
-    background: url(../img/fon2.jpg) no-repeat center #181617; 
-    background-size: cover;
+  background: url(../assets/fon2.jpg) no-repeat center #181617;
+  background-size: cover;
 }
 .footer_wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 360px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 360px;
 }
 
 .footer_list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 480px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 480px;
 }
-.footer_link{
-    font-size: 23px;
-    line-height: 60px;
-    color: #f7f7f7;
-    text-decoration: none;
-    border: none;
-    padding-right: 2px;
+.footer_link {
+  font-size: 23px;
+  line-height: 60px;
+  color: #f7f7f7;
+  text-decoration: none;
+  border: none;
+  padding-right: 2px;
 }
 
 .footer_list_net {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 240px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 240px;
 }
 
 .footer_item_net {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
-.footer_link_net{
-    text-decoration: none;
-    border: none;
+.footer_item_net:nth-child(1) {
+  background-image: url(../assets/svg/f.svg);
+}
+.footer_item_net:nth-child(2) {
+  background-image: url(../assets/svg/in.svg);
+}
+.footer_item_net:nth-child(3) {
+  background-image: url(../assets/svg/p.svg);
+}
+.footer_item_net:nth-child(4) {
+  background-image: url(../assets/svg/tg.svg);
+}
+
+.footer_item_net:hover {
+  opacity: 75%;
+  cursor: pointer;
+}
+
+.footer_link_net {
+  text-decoration: none;
+  border: none;
 }
 
 /*5.5 Все ссылки в футере должны быть интерактивными*/
@@ -414,6 +433,6 @@ input[type="submit"]:active {
 .footer_link:hover,
 .footer_link:active,
 .footer_link_net:hover,
-.footer_link_net:active{
-     opacity: 75%;
+.footer_link_net:active {
+  opacity: 75%;
 }
