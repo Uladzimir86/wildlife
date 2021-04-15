@@ -1,2 +1,5 @@
 # wildlife
-https://github.com/Uladzimir86/wildlife
+
+
+https://uladzimir86.github.io/wildlife/
+
